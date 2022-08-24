@@ -1,0 +1,215 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:rrot{
+    --navbar-height:59px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation bar: logo and image */
+#logo{
+    margin: 10x 34px;
+}
+
+#logo img{
+     height: 59px;
+     margin: 3px 6px;
+}
+
+/* Navigation bar: List styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: black;
+    display: block; 
+    padding: 5px 22px;
+    border-radius: 20px;
+    text-decoration: none;   
+}
+#navbar ul li a:hover{
+    color: goldenrod;
+    background-color: white;    
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 502px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url(../img/pexels-ella-olsson-1640777.jpg)no-repeat center ;
+    top: 0px;
+    left: 0px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif
+}
+
+/* Services Section*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: 6px 6px;
+    border-radius: 23px;
+    background-color: rgb(225, 185, 185);
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+/* Clients section */
+#client-section{
+    height: 344px;
+    position: relative;
+}
+.r-primary{
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 35px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/pexels-ella-olsson-1640777.jpg);
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+   height: 130px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+content: " ";
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.7;
+background-image: url(../img/contactus.jpg);
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{
+    background: black;
+    color: antiquewhite;
+    padding: 9px 20px;
+}
+/* utility class */
+.P-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding-top: 70px;
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+}
+.h-secondary:hover{
+    cursor: pointer;    
+}
+.btn{
+    padding: 6px 20px;
+    /* border: 2px solid blue; */
+    background-color: whitesmoke;
+    color: black;
+    margin: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: goldenrod;
+    background-color: white;
+}
+.center{
+    text-align: center;
+}
